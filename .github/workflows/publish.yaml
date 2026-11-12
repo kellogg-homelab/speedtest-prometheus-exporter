@@ -22,8 +22,7 @@ jobs:
           with:
             platforms: linux/amd64
             push: true
+            registry: ghcr.io
             tags: |
-              ${{ github.repository }}:latest
-            #   user/app:1.0.0
-            #   ghcr.io/user/app:latest
+              ghcr.io/${{ github.repository }}:latest
             #   ghcr.io/user/app:1.0.0
